@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap');
+
+span#Web{
+    color: blue;
+}
+
+span#st{
+    color: black;
+}
+
+span#st2{
+    color: white;
+}
+
+footer{
+    background-color: rgb(47, 48, 58);
+}
+
+span{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+#button{
+    background-color: rgb(33, 150, 243);
+    color: white;
+}
