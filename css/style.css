@@ -1,42 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap');
 
-body {
+/* Основний шрифт для сторінки */
+html {
     font-family: "Roboto", sans-serif;
-    second-family: "Raleway" sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
 }
 
-span#Web{
+/* Стилізація для тексту у span */
+span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+/* Стилізація для заголовків WebStudio */
+span#Web {
     color: blue;
 }
 
-span#st{
+span#st {
     color: black;
 }
 
-span#st2{
+span#st2 {
     color: white;
 }
 
-footer{
+/* Стилізація для футера */
+footer {
     background-color: rgb(47, 48, 58);
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
 
-span{
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-html{
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-
-
-#button{
+/* Кнопка */
+#button {
     background-color: rgb(33, 150, 243);
     color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: rgb(30, 136, 229);
+}
+
+/* Уніфікація шрифтів для тексту */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
 }
