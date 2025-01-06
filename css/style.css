@@ -1,14 +1,26 @@
+/* Підключення normalize.css та reset.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+
+/* Підключення шрифтів */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap');
 
-/* Основний шрифт для сторінки */
+/* Основний стиль сторінки */
 html {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     line-height: 1.5;
+    box-sizing: border-box;
 }
 
-/* Стилізація для тексту у span */
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Текст у span */
 span {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -16,7 +28,7 @@ span {
     font-optical-sizing: auto;
 }
 
-/* Стилізація для заголовків WebStudio */
+/* Заголовки WebStudio */
 span#Web {
     color: blue;
 }
@@ -29,7 +41,7 @@ span#st2 {
     color: white;
 }
 
-/* Стилізація для футера */
+/* Футер */
 footer {
     background-color: rgb(47, 48, 58);
     padding: 20px;
@@ -54,7 +66,7 @@ footer {
     background-color: rgb(30, 136, 229);
 }
 
-/* Уніфікація шрифтів для тексту */
+/* Текст у тілі сторінки */
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -62,4 +74,20 @@ body {
     font-size: 16px;
     color: #333;
     line-height: 1.5;
+}
+
+/* Додаткові стилі для списків */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(33, 150, 243);
 }
