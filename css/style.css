@@ -91,3 +91,81 @@ a {
 a:hover {
     color: rgb(33, 150, 243);
 }
+
+.container {
+    padding: 0 15px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+}
+
+.header-nav-link-studio {
+    color: #000;
+}
+
+.intro-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+        color: #000;
+}
+
+.main-list {
+    display: flex;
+    margin: 94 0;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 25px;
+    align-items: center;
+    color: #000;
+}
+
+.intro-button {
+    margin: 0 auto;
+    display: block;
+}
+
+.activities-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+.team-member-pic {
+    width: 270px;
+    height: 260px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+.activities-image {
+    /* display: flex; */
+    justify-content: space-between;
+}

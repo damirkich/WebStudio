@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page">
     <header class="header">
+        <div class="container">
+
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-item">
-                    <a class="header-nav-link title" href="#">
-                        <span class="header-nav-link-web">Web</span>
-                        <span class="header-nav-link-studio">Studio</span>
+                    <a class="header-logo" href="#">
+                        Web<span class="header-nav-link-studio">Studio</span>
                     </a>
                 </li>
                 <li class="header-nav-item"><a class="header-nav-link" href="#">Студія</a></li>
                 <li class="header-nav-item"><a class="header-nav-link" href="#">Портфоліо</a></li>
                 <li class="header-nav-item"><a class="header-nav-link" href="#">Контакти</a></li>
+                <li class="header-nav-item"><a class="footer-address-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header-nav-item"><a class="footer-address-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </nav>
+    </div>
     </header>
     <section class="intro">
-        <h1 class="intro-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container">
+        <h1 class="intro-title">Ефективні рішення для <br>вашого бізнесу</h1>
         <button class="intro-button" id="button">Замовити послугу</button>
+    </div>
     </section>
     <main class="main">
+        <section class="benefits">
         <ul class="main-list">
             <li class="main-list-item">
                 <b class="main-list-item-title">УВАГА ДО ДЕТАЛЕЙ</b>
@@ -45,17 +52,24 @@
                 <p class="main-list-item-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
         </ul>
-    </main>
+    </section>
+    
     <section class="activities">
         <h2 class="activities-title">Чим ми займаємося</h2>
-        <img class="activities-image" src="./img/img.png" alt="ноутбук">
-        <img class="activities-image" src="./img/box2.png" alt="Чоловік з телефоном">
-        <img class="activities-image" src="./img/box3.png" alt="Кольори">
+        <img class="activities-image" src="./img/uh.png" alt="ноутбук">
+        <img class="activities-image" src="./img/uh2.png" alt="Чоловік з телефоном">
+        <img class="activities-image" src="./img/uh3.png" alt="Кольори">
     </section>
     <section class="team">
         <h2 class="team-title">Наша команда</h2>
-        <img class="team-image" src="./img/team.png" alt="Команда">
+        <ul class="team-members">
+            <li class="team-member"> <img class="team-member-pic" src="./img/blabla.jpg" alt="igor"> <h3 class="team-member-name">Ігор Дем'яненко <br> <span class="team-member-occupation">Product Designer</span></h3></li>
+            <li class="team-member"> <img class="team-member-pic" src="./img/e2.jpg" alt="olga"> <h3 class="team-member-name">Ольга Рєпіна <br> <span class="team-member-occupation">Frontend Developer</li>
+            <li class="team-member"> <img class="team-member-pic" src="./img/e3.jpg" alt="colya"> <h3 class="team-member-name">Микола Тарасов<br> <span class="team-member-occupation">Marketing</li>
+            <li class="team-member"> <img class="team-member-pic" src="./img/e4.jpg" alt="misha"> <h3 class="team-member-name">Михайло Єрмаков<br> <span class="team-member-occupation">UI Designer</span></h3</li>
+        </ul>
     </section>
+    </main>
     <footer class="footer">
         <nav class="footer-nav">
             <ul class="footer-nav-list">
