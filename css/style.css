@@ -45,7 +45,6 @@ span#st2 {
 footer {
     background-color: rgb(47, 48, 58);
     padding: 20px;
-    text-align: center;
     color: white;
 }
 
@@ -54,12 +53,16 @@ footer {
     background-color: rgb(33, 150, 243);
     color: white;
     border: none;
-    padding: 10px 20px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
 }
 
 #button:hover {
@@ -117,7 +120,7 @@ a:hover {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-        color: #000;
+    color: #fff;
 }
 
 .main-list {
@@ -136,6 +139,8 @@ a:hover {
 .intro-button {
     margin: 0 auto;
     display: block;
+    margin: 30px auto;
+    padding: 10px 32px;
 }
 
 .activities-title {
@@ -165,7 +170,38 @@ a:hover {
     color: #212121;
 }
 
-.activities-image {
-    /* display: flex; */
+.activities-list {
+    display: flex;
     justify-content: space-between;
+
 }
+.footer-nav-link-studio {
+    color: white;
+}
+
+.team-members {
+    justify-content: space-between;
+    display: flex;
+}
+
+.team-member-name {
+    text-align: center;
+}
+
+.team-member {
+    box-shadow: gray;
+}
+
+.team {
+    background-color: lightgray;
+}
+
+.intro {
+    background-color: #2f303a;
+    padding: 200px 0;
+}
+
+.footer-nav-list {
+    display: flex;
+}
+
