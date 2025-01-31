@@ -123,9 +123,10 @@ a:hover {
     color: #fff;
 }
 
-.main-list {
+.benefits-list {
     display: flex;
     margin: 94 0;
+    gap: 30px;
 }
 
 .header-nav-list {
@@ -153,7 +154,6 @@ a:hover {
 }
 
 .team-member-pic {
-    width: 270px;
     height: 260px;
 }
 
@@ -190,10 +190,14 @@ a:hover {
 
 .team-member {
     box-shadow: gray;
+    background-color: white;
+    height: 368px;
+    align-items: center;
 }
 
 .team {
     background-color: lightgray;
+    padding: 186px 0;
 }
 
 .intro {
@@ -205,3 +209,47 @@ a:hover {
     display: flex;
 }
 
+.benefits {
+    padding:  94px 0;
+}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.benefits-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.activities-list {
+    padding: 94px 0;
+}
+
+.team-member-occupation {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #757575;
+}
+
+.team-member-name {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    padding: 30px 0;
+}
+
+.team-title {
+    padding: 50px 0;
+}
