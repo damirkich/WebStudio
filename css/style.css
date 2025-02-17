@@ -20,56 +20,6 @@ html {
     padding: 0;
 }
 
-/* Текст у span */
-span {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-optical-sizing: auto;
-}
-
-/* Заголовки WebStudio */
-span#Web {
-    color: blue;
-}
-
-span#st {
-    color: black;
-}
-
-span#st2 {
-    color: white;
-}
-
-/* Футер */
-footer {
-    background-color: rgb(47, 48, 58);
-    padding: 20px;
-    color: white;
-}
-
-/* Кнопка */
-#button {
-    background-color: rgb(33, 150, 243);
-    color: white;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 187%;
-    letter-spacing: 0.06em;
-    text-align: center;
-}
-
-#button:hover {
-    background-color: rgb(30, 136, 229);
-}
-
-/* Текст у тілі сторінки */
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -79,177 +29,57 @@ body {
     line-height: 1.5;
 }
 
-/* Додаткові стилі для списків */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: rgb(33, 150, 243);
-}
-
 .container {
-    padding: 0 15px;
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
-.header-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    color: #2196f3;
-}
-
-.header-nav-link-studio {
-    color: #000;
-}
-
-.intro-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 136%;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
+/* Flexbox для сторінки "Студія" */
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
 }
 
 .benefits-list {
     display: flex;
-    margin: 94 0;
+    justify-content: space-between;
     gap: 30px;
 }
 
-.header-nav-list {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 25px;
-    align-items: center;
-    color: #000;
-}
-
-.intro-button {
-    margin: 0 auto;
-    display: block;
-    margin: 30px auto;
-    padding: 10px 32px;
-}
-
-.activities-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
-}
-
-.team-member-pic {
-    height: 260px;
-}
-
 .team-members {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
+/* Grid для сторінки "Портфоліо" */
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
 }
 
-.activities-list {
+.products-list-item {
+    border: 1px solid #eee;
+    height: 404px;
     display: flex;
-    justify-content: space-between;
-
-}
-.footer-nav-link-studio {
-    color: white;
-}
-
-.team-members {
-    justify-content: space-between;
-    display: flex;
-}
-
-.team-member-name {
-    text-align: center;
-}
-
-.team-member {
-    box-shadow: gray;
-    background-color: white;
-    height: 368px;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.team {
-    background-color: lightgray;
-    padding: 186px 0;
-}
-
-.intro {
-    background-color: #2f303a;
-    padding: 200px 0;
-}
-
-.footer-nav-list {
-    display: flex;
-}
-
-.benefits {
-    padding:  94px 0;
-}
-
-.benefits-title {
+.product-title {
     font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    font-size: 18px;
     color: #212121;
+    margin-top: 20px;
 }
 
-.benefits-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.activities-list {
-    padding: 94px 0;
-}
-
-.team-member-occupation {
+.product-type {
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
     color: #757575;
-}
-
-.team-member-name {
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
-    padding: 30px 0;
-}
-
-.team-title {
-    padding: 50px 0;
 }
