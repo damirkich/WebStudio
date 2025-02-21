@@ -27,6 +27,7 @@ body {
     font-size: 16px;
     color: #333;
     line-height: 1.5;
+    background-color: #fff;
 }
 
 .container {
@@ -49,10 +50,30 @@ body {
     gap: 30px;
 }
 
+.benefits-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .team-members {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+
+.team-member {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* Grid для сторінки "Портфоліо" */
@@ -63,12 +84,16 @@ body {
 }
 
 .products-list-item {
+    background: #fff;
     border: 1px solid #eee;
     height: 404px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-title {
