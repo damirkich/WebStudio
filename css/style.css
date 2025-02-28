@@ -1,110 +1,335 @@
-/* Підключення normalize.css та reset.css */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Підключення шрифтів */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap');
-
-/* Основний стиль сторінки */
-html {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.5;
-    box-sizing: border-box;
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
 }
-
-*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-    background-color: #fff;
+  font-family: Roboto;
 }
-
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+  padding: 0 15px;
+  width: 1170px;
+  margin: 0 auto;
 }
 
-/* Flexbox для сторінки "Студія" */
-.header-nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 0;
+article {
+  width: 1800px;
+  height: 300px;
+  background-color: rgba(47, 48, 58, 1);
+}
+.main-title span {
+  color: #2196f3;
+}
+
+.hero {
+  background: #2f303a;
+  padding: 200px 0;
+  background-image: url("/img/Team.jpg");
+  height: 100%;
+  width: 100%;
+}
+.hero-btn {
+  background-color: rgb(33, 150, 243);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: block;
+  width: 220px;
+  padding: 10px 32px;
+  margin: 0px auto;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+p {
+  color: grey;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: var(--second-family);
+  color: #000;
+}
+
+.main-word {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+h1 {
+  font-weight: 1100;
+  font-size: 44px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.main-description {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.last-word {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-section {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.last-section {
+  text-align: center;
+}
+
+.comand-ul {
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.last-word {
+  color: white;
+}
+.benefits {
+  padding: 94px 0 94px 0;
+}
+
+.main-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  padding-right: 30px;
+}
+.comand-ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.comand-ul-list {
+  border-radius: 0 0 4px 4px;
+  width: 270px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
 }
 
 .benefits-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
 }
 
-.benefits-item {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.footer {
+  background: #2f303a;
+  padding: 60px 1240px 161px 215px;
+}
+.last-logo span {
+  color: #2196f3;
+}
+.last-logo {
+  color: white;
 }
 
-.team-members {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+.last-logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
 }
 
-.team-member {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  font-family: var(--font-family);
 }
 
-.team-member img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Grid для сторінки "Портфоліо" */
 .products-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
+  border: 1px solid #eee;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
 }
 
-.products-list-item {
-    background: #fff;
-    border: 1px solid #eee;
-    height: 404px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.products-btn {
+  text-align: center;
 }
 
-.product-title {
-    font-weight: 700;
-    font-size: 18px;
-    color: #212121;
-    margin-top: 20px;
+.products-btn:hover {
+  color: #2196f3;
 }
 
-.product-type {
-    font-weight: 400;
-    font-size: 16px;
-    color: #757575;
+.image-decoration {
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  gap: 30px;
+  margin: 94px 0 30px;
+  padding: 25px 102.34px;
+}
+.image-work {
+  gap: 30px;
+  margin: 50px 0 94px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+.Web {
+  color: #2196f3;
+}
+
+.st1 {
+  color: black;
+}
+
+.st2 {
+  color: white;
+}
+
+span {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.header-address {
+  color: white;
+  font-style: normal;
+}
+
+.header-tel {
+  color: #757575;
+}
+
+.header-email {
+  color: #2196f3;
+  gap: 50px;
+}
+
+.header-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  list-style: none;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+
+.products-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.products-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.second-section-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.last-section .container {
+  padding: 0;
+  width: 1600px;
+  height: 648px;
+  background: #f5f4fa;
 }
