@@ -23,13 +23,12 @@
           <nav class="header-nav">
             <ul class="header-list">
               <li class="header-list-item">
-                <a class="header-list-link" href="#">Студія</a>
+              <a class="header-list-link current" href="./index.html">Студія</a>
               </li>
               <li class="header-list-item">
-                <a class="header-list-link" href="./portfolio.html">Портфоліо</a>
-              </li>
+                  <a class="header-list-link current" href="./portfolio.html">Портфоліо</a>              </li>
               <li class="header-list-item">
-                <a class="header-list-link" href="#">Контакти</a>
+                <a class="header-list-link current" href="#">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -213,28 +212,43 @@
             <label for="name">
               Ім'я
             </label>
-            <input name="name" type="text">
+            <div class="modal-field-wrapper">
+              <svg width="18" height="18">
+                <use href="./img/sprite.svg#icon-person"></use>
+              </svg>
+              <input name="name" type="text">
+            </div>
           </div>
 
           <div class="modal-field">
             <label for="phone">
               Телефон
             </label>
-            <input name="phone" type="tel">
+            <div class="modal-field-wrapper">
+              <svg width="18" height="18">
+                <use href="./img/sprite.svg#icon-telephone"></use>
+              </svg>
+              <input tel="tel" type="text">
+            </div>
           </div>
 
           <div class="modal-field">
             <label for="email">
               Пошта
             </label>
-            <input name="email" type="email">
+            <div class="modal-field-wrapper">
+              <svg width="18" height="18">
+                <use href="./img/sprite.svg#icon-email2"></use>
+              </svg>
+              <input email="email" type="text">
+            </div>
           </div>
 
           <div class="modal-field">
             <label for="message">
               Коментар
             </label>
-            <textarea rows="5" name="message" id=""></textarea>
+            <textarea placeholder="Введіть текст" rows="5" name="message" id=""></textarea>
           </div>
 
           <button type="submit" class="modal-btn">Submit</button>
@@ -248,5 +262,12 @@
           </script>
     <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/945cbc1d36.js" crossorigin="anonymous"></script>
+    <script>
+  document.querySelectorAll('.header-list-link').forEach(link => {
+    if(link.href === window.location.href) {
+      link.classList.add('current');
+    }
+  });
+</script>
   </body>
 </html>
