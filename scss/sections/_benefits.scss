@@ -1,0 +1,133 @@
+
+.benefits {
+  padding: 94px 0;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: $color-bg-light;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    color: $color-secondary;
+    line-height: 1.71;
+    margin: 0;
+  }
+}
+
+.works {
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__gallery {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.team {
+  background-color: $color-bg-light;
+  padding: 94px 0;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__member {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__card {
+    background-color: $color-white;
+    border-radius: 0 0 4px 4px;
+    box-shadow: $shadow-primary;
+  }
+
+  &__photo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__info {
+    padding: 30px;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    color: $color-secondary;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

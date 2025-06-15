@@ -14,190 +14,185 @@
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-content">
-          <a class="logo" href="#"
-            ><span class="Web">Web</span><span class="st1">Studio</span></a
-          >
-          <nav class="header-nav">
-            <ul class="header-list">
-              <li class="header-list-item">
-              <a class="header-list-link current" href="./index.html">Студія</a>
-              </li>
-              <li class="header-list-item">
-                  <a class="header-list-link current" href="./portfolio.html">Портфоліо</a>              </li>
-              <li class="header-list-item">
-                <a class="header-list-link current" href="#">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <address class="header-address">
-          <a href="mailto:info@devstudio.com" class="header-email"
-            >info@devstudio.com</a
-          >>
-          <a href="tel:+380961111111" class="header-tel">+38 096 111 11 11</a>
-        </address>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
-          <button data-open-modal id="button" class="hero-btn">Зaмовити послугу</button>
-        </div>
-      </section>
-      <section class="benefits">
-        <div class="container">
-          <ul class="benefits-list">
-            <li class="benefits-item">
-              <div class="benefits-image-wrapper">
-                <svg class="image-decoration" width="70" height="70">
-                  <use href="./img/sprite.svg#icon-astronaut-1"></use>
-                </svg>
-                </div>
-                <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="main-description">
-                  Ідейні міркування, і навіть початок повсякденної роботи з
-                  формування позиції.
-                </p>
+ <header class="header">
+    <div class="container header__container">
+      <a class="logo header__logo" href="./index.html">
+        <span class="logo__accent">Web</span>Studio
+      </a>
+      
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <ul class="contacts header__contacts">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-            </li>
-            <li class="benefits-item">
-              <div>
-                <svg class="image-decoration" width="70" height="70">
-                  <use href="./img/sprite.svg#icon-astronaut-1"></use>
-                </svg>
-                <h3 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="main-description">
-                  Завдання організації, особливо рамки і місце навчання кадрів
-                  тягне у себе.
-                </p>
-              </div>
-            </li>
-            <li class="benefits-item">
-              <div>
-                <img
-                  class="image-decoration"
-                  src="./svg/svg3.svg"
-                  width="66"
-                  height="70"
-                />
-                <h3 class="benefits-title">ПЛАНУВАННЯ</h3>
-                <p class="main-description">
-                  Так само консультація з широким активом значною мірою
-                  зумовлює.
-                </p>
-              </div>
-            </li>
-            <li class="benefits-item">
-              <div>
-                <img
-                  class="image-decoration"
-                  src="./svg/svg4.svg"
-                  width="66"
-                  height="70"
-                />
-                <h3 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="main-description">
-                  Значимість цих проблем настільки очевидна, що реалізація
-                  планових завдань.
-                </p>
-              </div>
-            </li>
-          </ul>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="button hero__button" type="button">Замовити послугу</button>
+      </div>
+    </section>
+
+    <section class="benefits">
+  <div class="container">
+    <h2 class="visually-hidden">Наші переваги</h2>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <div class="benefits__icon-wrapper">
+          <svg class="benefits__icon" width="70" height="70">
+            <use href="./img/sprite.svg#icon-astronaut-1"></use>
+          </svg>
         </div>
-      </section>
-      <section class="second-section">
-        <div class="container">
-          <h2 class="second-title">Чим ми займаємося</h2>
-          <div class="second-section-wrapper">
-            <img
-              src="./img/uh.png"
-              alt="Робота"
-              width="370"
-              height="294"
-              class="image-work"
-            />
-            <img
-              src="./img/uh2.png"
-              alt="Компютер"
-              width="370"
-              height="294"
-              class="image-work"
-            />
-            <img
-              src="./img/uh3.png"
-              alt="Планшет"
-              width="370"
-              height="294"
-              class="image-work"
-            />
+        <h3 class="benefits__title">Увага до деталей</h3>
+        <p class="benefits__description">
+          Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+        </p>
+      </li>
+      
+      <li class="benefits__item">
+        <div class="benefits__icon-wrapper">
+          <svg class="benefits__icon" width="70" height="70">
+            <use href="./img/sprite.svg#icon-astronaut-1"></use>
+          </svg>
+        </div>
+        <h3 class="benefits__title">Пунктуальність</h3>
+        <p class="benefits__description">
+          Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+        </p>
+      </li>
+      
+      <li class="benefits__item">
+        <div class="benefits__icon-wrapper">
+          <img class="benefits__icon" src="./svg/svg3.svg" alt="" width="66" height="70">
+        </div>
+        <h3 class="benefits__title">Планування</h3>
+        <p class="benefits__description">
+          Так само консультація з широким активом значною мірою зумовлює.
+        </p>
+      </li>
+      
+      <li class="benefits__item">
+        <div class="benefits__icon-wrapper">
+          <img class="benefits__icon" src="./svg/svg4.svg" alt="" width="66" height="70">
+        </div>
+        <h3 class="benefits__title">Сучасні технології</h3>
+        <p class="benefits__description">
+          Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="works">
+  <div class="container">
+    <h2 class="section-title works__title">Чим ми займаємося</h2>
+    <div class="works__gallery">
+      <div class="works__item">
+        <img src="./img/uh.png" alt="Робота за комп'ютером" class="works__image">
+      </div>
+      <div class="works__item">
+        <img src="./img/uh2.png" alt="Розробка мобільних додатків" class="works__image">
+      </div>
+      <div class="works__item">
+        <img src="./img/uh3.png" alt="Дизайн на планшеті" class="works__image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="container">
+    <h2 class="section-title team__title">Наша команда</h2>
+    <ul class="team__list">
+      <li class="team__member">
+        <div class="team__card">
+          <img src="./img/e.jpg" alt="Ігор Дем'яненко" class="team__photo">
+          <div class="team__info">
+            <h3 class="team__name">Ігор Дем'яненко</h3>
+            <p class="team__position">Product Designer</p>
           </div>
         </div>
-      </section>
-      <section class="last-section">
-        <div class="container">
-          <h2 class="second-title">Наша команда</h2>
-          <ul class="comand-ul">
-            <li class="comand-ul-list">
-              <img
-                src="./img/e.jpg"
-                alt="Чоловік1"
-                width="270"
-                height="260"
-              />
-              <h4>Ігор Дем'яненко</h4>
-              <p class="main-description">Product Designer</p>
-            </li>
-            <li class="comand-ul-list">
-              <img
-                src="./img/e2.jpg"
-                alt="Жінка1"
-                width="270"
-                height="260"
-              />
-              <h4>Ольга Рєпіна</h4>
-              <p class="main-description">Frontend Developer</p>
-            </li>
-            <li class="comand-ul-list">
-              <img
-                src="./img/e3.jpg"
-                alt="Чоловік2"
-                width="270"
-                height="260"
-              />
-              <h4>Микола Тарасов</h4>
-              <p class="main-description">Marketing</p>
-            </li>
-            <li class="comand-ul-list">
-              <img
-                src="./img/blabla.jpg"
-                alt="Чоловік3"
-                width="270"
-                height="260"
-              />
-              <h4>Михайло Єрмаков</h4>
-              <p class="main-description">UI Designer</p>
-            </li>
-          </ul>
+      </li>
+      
+      <li class="team__member">
+        <div class="team__card">
+          <img src="./img/e2.jpg" alt="Ольга Рєпіна" class="team__photo">
+          <div class="team__info">
+            <h3 class="team__name">Ольга Рєпіна</h3>
+            <p class="team__position">Frontend Developer</p>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <a class="last-logo" href="#"><span>Web</span>Studio</a>
-        <address class="last-word">м. Київ, пр-т Лесі Українки, 26</address>
-        <a class="last-word" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        ><br />
-        <a class="last-word" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+      </li>
+      
+      <li class="team__member">
+        <div class="team__card">
+          <img src="./img/e3.jpg" alt="Микола Тарасов" class="team__photo">
+          <div class="team__info">
+            <h3 class="team__name">Микола Тарасов</h3>
+            <p class="team__position">Marketing</p>
+          </div>
+        </div>
+      </li>
+      
+      <li class="team__member">
+        <div class="team__card">
+          <img src="./img/blabla.jpg" alt="Михайло Єрмаков" class="team__photo">
+          <div class="team__info">
+            <h3 class="team__name">Михайло Єрмаков</h3>
+            <p class="team__position">UI Designer</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__info">
+        <a class="logo footer__logo" href="./index.html">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+        <address class="address">
+          <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+          <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </address>
       </div>
-    </footer>
+    </div>
+  </footer>
 
         <div class="backdrop is-hidden">
       <div class="modal">
